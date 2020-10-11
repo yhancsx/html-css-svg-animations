@@ -1,0 +1,113 @@
+:root {
+  --width: 600px;
+  --height: 200px;
+  --depth: 10px;
+  --time: 10s;
+}
+
+use {
+  fill: #cccccc;
+}
+
+#task {
+  transform: translate(-50%, 0);
+  transform-box: fill-box;
+}
+#task1 {
+  animation: taskMove1 var(--time) ease-in-out infinite;
+}
+#task2 {
+  animation: taskMove2 var(--time) ease-in-out infinite;
+}
+#task3 {
+  animation: taskMove3 var(--time) ease-in-out infinite;
+}
+#task4 {
+  animation: taskMove4 var(--time) ease-in-out infinite;
+}
+@keyframes taskMove1 {
+  0% {
+    transform: translate3d(0, calc(var(--height) / 2), 0) scale(1);
+    fill: #cccccc;
+  }
+  25% {
+    transform: translate3d(calc(var(--width) / 2), var(--height), 10px)
+      scale(1.1);
+    fill: #6c63ff;
+  }
+  50% {
+    transform: translate3d(var(--width), calc(var(--height) / 2), 0) scale(1);
+    fill: #cccccc;
+  }
+  75% {
+    transform: translate3d(calc(var(--width) / 2), 0, -10px) scale(0.9);
+  }
+  100% {
+    transform: translate3d(0, calc(var(--height) / 2), 0) scale(1);
+  }
+}
+@keyframes taskMove2 {
+  0% {
+    transform: translate3d(calc(var(--width) / 2), var(--height), 10px)
+      scale(1.1);
+    fill: #6c63ff;
+  }
+  25% {
+    transform: translate(var(--width), calc(var(--height) / 2)) scale(1);
+    fill: #cccccc;
+  }
+  50% {
+    transform: translate3d(calc(var(--width) / 2), 0, -10px) scale(0.9);
+  }
+  75% {
+    transform: translate(0, calc(var(--height) / 2)) scale(1);
+    fill: #cccccc;
+  }
+  100% {
+    transform: translate3d(calc(var(--width) / 2), var(--height), 10px)
+      scale(1.1);
+    fill: #6c63ff;
+  }
+}
+@keyframes taskMove3 {
+  0% {
+    transform: translate(var(--width), calc(var(--height) / 2)) scale(1);
+  }
+  25% {
+    transform: translate3d(calc(var(--width) / 2), 0, -10px) scale(0.9);
+  }
+  50% {
+    transform: translate(0, calc(var(--height) / 2)) scale(1);
+    fill: #cccccc;
+  }
+  75% {
+    transform: translate3d(calc(var(--width) / 2), var(--height), 10px)
+      scale(1.1);
+    fill: #6c63ff;
+  }
+  100% {
+    transform: translate(var(--width), calc(var(--height) / 2)) scale(1);
+    fill: #cccccc;
+  }
+}
+@keyframes taskMove4 {
+  0% {
+    transform: translate3d(calc(var(--width) / 2), 0, -10px) scale(0.9);
+  }
+  25% {
+    transform: translate(0, calc(var(--height) / 2)) scale(1);
+    fill: #cccccc;
+  }
+  50% {
+    transform: translate3d(calc(var(--width) / 2), var(--height), 10px)
+      scale(1.1);
+    fill: #6c63ff;
+  }
+  75% {
+    transform: translate(var(--width), calc(var(--height) / 2)) scale(1);
+    fill: #cccccc;
+  }
+  100% {
+    transform: translate3d(calc(var(--width) / 2), 0, -10px) scale(0.9);
+  }
+}
