@@ -1,6 +1,6 @@
 ## Setup Wizard Rotation
 
-#### Used Css Techniques
+#### Used Techniques
 
 `transform`, `translate` `transform-box`, `animation`, `translate3d`, `scale`
 
